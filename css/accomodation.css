@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#mainNavbar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1050;
+}
+.brand-text{
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+.navbar-brand img{
+  display: block;
+}
+.navbar{
+  max-width: 1140px;          
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+   padding: 17px 22px; 
+  border-radius: 6px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.navbar-brand img{
+  height: 30px;
+}
+
+.navbar-nav .nav-item{
+  margin-right: 3px;        
+}
+
+.navbar-nav .nav-item:last-child{
+  margin-right: 0;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: #222;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+  color: #14d8df;
+}
+
+.dropdown-menu{
+  border: none;
+  border-radius: 4px;
+  padding: 12px 0;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.dropdown-item{
+  font-size: 14px;
+  padding: 8px 20px;
+}
+
+.dropdown-item:hover{
+  background: #fab915;
+  color: #fff;
+}
+
+.navbar-light .navbar-toggler{
+  border: none;
+}
+
+.navbar-light .navbar-toggler-icon{
+  filter: brightness(0);
+}
+
+.navbar-light .navbar-toggler{
+  border: 2px solid #fab915;  
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 991.98px){
+
+  .navbar{
+    width: 100% !important;
+    margin-top: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .header_area .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+ .breadcrumb_area{
+  position: relative;
+  background: url(../images/bg-3.jpg)center center/cover no-repeat;
+  padding: 120px 0;
+  color: #fff;
+}
+
+.breadcrumb_area::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+}
+
+.breadcrumb_content{
+  position: relative;
+  z-index: 2;
+}
+
+.page-title{
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.breadcrumb{
+  background: transparent;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item a{
+  color: #f3c300;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.breadcrumb-item.active{
+  color: #fff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+  color: #fff;
+}
+
+
+.section_title h2{
+  margin-top: 50px;   
+}
+
+.section_title p{
+  color: #777;  
+  line-height: 1.7;        
+  font-size: 15px;
+}
+
+
+.hotel_img{
+  position: relative;
+  overflow: hidden;
+}
+
+.hotel_img img{
+  width: 100%;
+  display: block;
+  transition: transform 0.6s ease-in-out;  /* Smooth timing */
+}
+
+.accomodation_item:hover .hotel_img img{
+  transform: scale(1.1);
+}
+
+.room_btn{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  background: #f3c300; 
+  color: #000;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.room_btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #ff7a00;   
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.hotel_img:hover .room_btn::before{
+  width: 100%;
+}
+
+.hotel_img:hover .room_btn{
+  color: #fff;
+}
+
+.sec_h4{
+  font-size: 18px;
+  color: #222;
+  transition: 0.3s ease;
+}
+
+.accomodation_item h5{
+  color: #11a9bd;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+ .accomodation_item:hover .sec_h4{
+  color: #f3c300;   
+}
+
+.accomodation_item h5 small{
+  color: #777;
+  transition: 0.3s ease;
+}
+
+.banner_area{
+  background: #f5f5f7;   
+  padding: 80px 0;
+}
+
+.hotel_booking_area{
+  background: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.booking_title{
+  background-color: #0c0c0c;
+   padding: 51px; 
+  text-align: center;
+  color: #f3eded;
+}
+
+.booking_title h2{
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.booking_form{
+  background: #0c0c0c;
+}
+
+.form-control,
+.form-select{
+  height: 56px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus,
+.form-select:focus{
+  box-shadow: none;
+  border-color: #f3c300;
+}
+
+.book_btn{
+  position: relative;
+  overflow: hidden;
+  background: #f3c300;
+  color: #000;
+  font-weight: 600;
+  border-radius: 0;
+  padding: 12px 20px;
+  border: none;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.book_btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: -1;
+  transition: left 0.4s ease;
+}
+
+.book_btn:hover{
+  color: #fff;
+}
+
+.book_btn:hover::before{
+  left: 0;
+}
+
+
+.royal-footer{
+  background:#0b0b0b;
+  color:#bfbfbf;
+  font-size:15px;
+}
+
+.footer-title{
+  color:#f3c300;
+  font-size:17px;
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+.footer-text{
+  line-height:1.7;
+}
+
+.footer-links{
+  list-style:none;
+  padding:0;
+}
+
+.footer-links li{
+  margin-bottom:10px;
+}
+
+.footer-links a{
+  color:#bfbfbf;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-links a:hover{
+  color:#f3c300;
+  padding-left:5px;
+}
+
+.newsletter-form input{
+  flex:1;
+  padding:10px;
+  border:none;
+  outline:none;
+}
+
+.newsletter-form button{
+  background:#f3c300;
+  border:none;
+  padding:0 16px;
+  color:#000;
+}
+
+.insta-feed{
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 8px;
+}
+
+.insta-feed li{
+  overflow: hidden;
+}
+
+.insta-feed img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.insta-feed li:hover img{
+  transform: scale(1.1);
+}
+
+.insta-feed img:hover{
+  transform:scale(1.1);
+}
+
+.footer-line{
+  border-color:#222;
+  margin-top:40px;
+}
+
+.social-links a{
+  width:36px;
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid #ddd;
+  border-radius:50%;
+  color:#555;
+  transition:all 0.3s ease;
+}
+
+.social-links a:hover{
+  background:#e7ff0c;
+  color:#fff;
+  border-color:#ff5e13;
+  transform:translateY(-3px);
+}
+
+.footer-copy{
+  color:#bfbfbf;
+  font-size:14px;
+  margin:0;
+}
+
+.heart-icon{
+  color:#f3c300;   
+  margin:0 4px;
+}
+
+.colorlib-link{
+  color:#f3c300;
+  text-decoration:none;
+  font-weight:500;
+}
+
+.colorlib-link:hover{
+  text-decoration:none;
+}
