@@ -109,7 +109,7 @@ body{
 }
  .breadcrumb_area{
   position: relative;
-  background: url(../images/bg-11.jpg)center center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1723672833895-e82664c37af2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGhvdGVsJTIwYmxvZ3xlbnwwfHwwfHx8MA%3D%3D')center center/cover no-repeat;
   padding: 120px 0;
   color: #fff;
 }
@@ -563,23 +563,26 @@ body{
   color:#000;
 }
 
-.insta-feed{
+.insta-feed {
   list-style: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 8px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px; 
 }
 
-.insta-feed li{
-  overflow: hidden;
+.insta-feed li {
+  flex: 1 1 22%; 
+  margin-bottom: 5px;
 }
 
-.insta-feed img{
+.insta-feed li img {
   width: 100%;
-  height: 100%;
+  height: 80px; 
   object-fit: cover;
-  transition: transform 0.4s ease;
+  border-radius: 5px;
+  display: block;
 }
 
 .insta-feed li:hover img{
@@ -595,24 +598,56 @@ body{
   margin-top:40px;
 }
 
-
-.footer-copy{
-  color:#bfbfbf;
-  font-size:14px;
-  margin:0;
+/* Dark footer background */
+.footer-dark {
+  /* background-color: #111;  */
+  padding: 20px 0;
 }
 
-.heart-icon{
-  color:#f3c300;   
-  margin:0 4px;
+/* Footer text */
+.footer-dark .footer-copy,
+.footer-dark a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
-.colorlib-link{
-  color:#f3c300;
-  text-decoration:none;
-  font-weight:500;
+.footer-dark a:hover {
+  color: #ff4d6d; 
 }
 
-.colorlib-link:hover{
-  text-decoration:none;
+/* Heart animation */
+.heart-beat {
+  display: inline-block;
+  animation: heartbeat 1s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+}
+
+/* Social icons */
+.social-links li {
+  list-style: none;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #333;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #ff4d6d;
+  transform: translateY(-5px) rotate(10deg);
+  color: #fff;
 }
