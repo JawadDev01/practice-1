@@ -35,10 +35,26 @@ body{
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-.navbar-brand img{
-  height: 30px;
+
+.crown-icon {
+  color: gold;
+  font-size: 22px;
 }
 
+.logo-text {
+  font-size: 20px;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.navbar-brand:hover .logo-text {
+  color: #ff4d6d;
+}
+
+.navbar-brand:hover .crown-icon {
+  transform: rotate(-10deg) scale(1.2);
+  transition: 0.3s;
+}
 .navbar-nav .nav-item{
   margin-right: 3px;        
 }
